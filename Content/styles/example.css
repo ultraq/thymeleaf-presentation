@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+	background-color: lightgrey; 
+	font-family: 'Open Sans', sans-serif; 
+}
+
+#blog {
+	margin: 2em auto;
+	max-width: 50em;
+}
+
+.post {
+	background-color: white;
+	border-right: 0.5em solid #99cc33;
+	margin-left: -20em;
+	padding: 1em 1em 4em 21em;
+}
+
+.post-title {
+	font-style: italic;
+}
+
+.post-info {
+	color: grey;
+	margin-bottom: 2em;
+}
+
+.post-content {
+	margin-bottom: 2em;
+	text-align: justify;
+}
+
+.post-footer {
+	color: grey;
+	text-align: right;
+}

@@ -1,4 +1,5 @@
-thymeleaf-presentation
+
+Thymeleaf Presentation
 ======================
 
-Demo project for the Thymeleaf presentation
+Demo project for the Thymeleaf presentation.

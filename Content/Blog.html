@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:joda="http://www.ultraq.net.nz/thymeleaf/presentation"
+	lang="en">
+
+<head>
+	<title>My website</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" media="screen"/>
+	<link rel="stylesheet" href="styles/normalize.css" media="screen"/>
+	<link rel="stylesheet" href="styles/example.css" media="screen"/>
+</head>
+
+<body id="blog">
+
+	<section id="post-id" class="post" th:each="post: ${blog.posts}" th:id="${post.id}">
+		<header class="post-title">
+			<h1 th:text="${post.title}">Post Title</h1>
+		</header>
+		<div class="post-info">
+			<time th:datetime="${#joda.format(post.date, 'yyyy-MM-dd HH:mm:ssZ')}"
+				th:text="${#joda.format(post.date, 'EEEE, d MMMM yyyy')}">
+				Post Date/Time
+			</time>
+		</div>
+		<div class="post-content" th:text="${post.content}">
+			<p>Tart candy jelly beans. Cupcake chupa chups I love sesame snaps.
+			I love oat cake ice cream cake sweet roll tiramisu brownie gummies.
+			Halvah I love jujubes. Bear claw sugar plum bear claw. Pudding
+			sesame snaps topping I love cheesecake. Cotton candy caramels
+			croissant cotton candy jelly. Soufflé jelly-o cake gingerbread
+			chocolate chupa chups gummi bears halvah.</p>
+		</div>
+		<footer class="post-footer" th:text="${post.author}">
+			by Post Author
+		</footer>
+	</section>
+
+</body>
+
+</html>

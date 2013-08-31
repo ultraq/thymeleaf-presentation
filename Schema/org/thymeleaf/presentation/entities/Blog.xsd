@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Copyright 2013, Emanuel Rabina (http://www.ultraq.net.nz/)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<xsd:schema targetNamespace="http://www.thymeleaf.org/presentation/entities/blog"
+	xmlns="http://www.thymeleaf.org/presentation/entities/blog"
+	xmlns:jxb="http://java.sun.com/xml/ns/jaxb" jxb:extensionBindingPrefixes="xjc" jxb:version="2.0"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<!-- Map schema to custom package -->
+	<xsd:annotation>
+		<xsd:appinfo>
+			<jxb:schemaBindings>
+				<jxb:package name="org.thymeleaf.presentation.entities.blog"/>
+			</jxb:schemaBindings>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+	<!-- Root element -->
+	<xsd:element name="blog">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<jxb:class name="Blog"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="post" type="Post" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!-- Post type -->
+	<xsd:complexType name="Post">
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string"/>
+			<xsd:element name="author" type="xsd:string"/>
+			<xsd:element name="date" type="xsd:date">
+				<xsd:annotation>
+					<xsd:appinfo>
+						<xjc:javaType
+							adapter="nz.net.ultraq.jaxb.adapters.XMLDateTimeAdapter"
+							name="org.joda.time.DateTime"/>
+					</xsd:appinfo>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="content" type="xsd:string">
+				<xsd:annotation>
+					<xsd:appinfo>
+						<xjc:javaType
+							adapter="nz.net.ultraq.jaxb.adapters.XMLCDataAdapter"
+							name="java.lang.String"/>
+					</xsd:appinfo>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Copyright 2013, Emanuel Rabina (http://www.ultraq.net.nz/)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<blog xmlns="http://www.thymeleaf.org/presentation/entities/blog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.thymeleaf.org/presentation/entities/blog
+						https://raw.github.com/ultraq/thymeleaf-presentation/master/org/thymeleaf/presentation/entities/Blog.xsd">
+
+	<post>
+		<title>Classic lorem ipsum</title>
+		<author>http://www.lipsum.com/</author>
+		<date>2013-08-01</date>
+		<content><![CDATA[
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu iaculis leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat, purus eget sagittis semper, dolor diam adipiscing velit, ac pretium lorem arcu quis nibh. Vivamus quis justo interdum, tincidunt mauris sit amet, ullamcorper lectus. Ut dolor orci, mattis vitae dui quis, vehicula iaculis odio. Curabitur quis varius libero, eu rutrum neque. Mauris tempus tortor vitae est sollicitudin, vitae pharetra magna dignissim. Nulla laoreet, magna eget aliquet sagittis, est orci eleifend justo, in egestas nulla arcu nec quam.</p>
+
+			<p>Curabitur consequat, dolor nec convallis consectetur, mi mauris placerat neque, a sagittis arcu massa id erat. Suspendisse sit amet ante erat. Integer eu justo quis magna suscipit lobortis. Praesent risus risus, tincidunt et eleifend ut, vulputate id erat. Aenean egestas viverra tortor eget dignissim. Mauris at lobortis nibh, et mattis diam. Sed viverra ac neque nec blandit. Aliquam rhoncus placerat pretium. Quisque fringilla mauris sed feugiat pretium. Ut arcu magna, pulvinar a ornare a, egestas quis velit. Integer suscipit magna id ligula semper pellentesque. Duis consectetur hendrerit ante id auctor. Etiam venenatis bibendum tellus, id placerat neque auctor quis. Phasellus vel dictum massa. Nam interdum eleifend turpis, at pellentesque tellus dapibus id. Mauris eget urna arcu.</p>
+
+			<p>Fusce cursus ipsum quis ipsum pulvinar tempor. Praesent et porta massa. Sed tempor, magna volutpat bibendum vulputate, orci metus pellentesque augue, eu volutpat urna nulla sit amet magna. In vitae justo sodales, ultricies ligula in, faucibus sem. Aliquam quis magna adipiscing turpis sagittis pellentesque quis eu enim. Integer ultrices massa nec lectus vehicula dignissim. Quisque turpis justo, consectetur eget ipsum in, tristique eleifend justo. Aliquam pulvinar nibh vitae facilisis iaculis. Quisque elementum massa at elementum egestas. Nam eu ultrices risus. Integer congue dictum ligula sed pharetra. Aliquam mollis eros vitae metus pellentesque, id molestie massa bibendum. Suspendisse ut dolor adipiscing, vestibulum leo a, laoreet est. Nam ultrices est neque, eu dapibus lacus aliquam quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+		]]></content>
+	</post>
+
+	<post>
+		<title>Gangsta lorem ipsum</title>
+		<author>http://lorizzle.nl/</author>
+		<date>2013-08-03</date>
+		<content><![CDATA[
+			<p>Lorizzle ipsum dolor tellivizzle amizzle, consectetuer adipiscing da bomb. Nullizzle owned bling bling, phat volutpizzle, suscipit quis, gravida vizzle, arcu. Shizznit shit tortizzle. Sheezy erizzle. Stuff at dolor things fo tempizzle go to hizzle. Maurizzle pellentesque nibh izzle owned. Dawg izzle tortizzle. Pellentesque bow wow wow rhoncus shit. In its fo rizzle crunk uhuh ... yih! dictumst. Dizzle we gonna chung. Curabitur tellus fo, pretizzle rizzle, you son of a bizzle ac, we gonna chung vitae, nunc. The bizzle suscipizzle. Integer gizzle velizzle sed shut the shizzle up.</p>
+
+			<p>Curabitur brizzle shit quizzle check it out pizzle mollizzle. Phat ass. Ma nizzle stuff. Ma nizzle neque. You son of a bizzle orci. Cras maurizzle ma nizzle, interdizzle a, feugiat sit amizzle, malesuada izzle, i'm in the shizzle. Shizzlin dizzle gravida. Vestibulizzle orci mi, yo in, my shizz sed, sure sempizzle, velizzle. You son of a bizzle izzle ipsizzle. Things volutpizzle phat bling bling orci. Crizzle yo mamma justo i saw beyonces tizzles and my pizzle went crizzle purus sodales ornare. Pot we gonna chung shizznit et go to hizzle. Fo shizzle fo shizzle. Suspendisse shizzle my nizzle crocodizzle placerizzle lacizzle. Curabitizzle brizzle ante. Nunc pharetra, leo eu crackalackin hendrerizzle, for sure felis elementum sizzle, gizzle aliquizzle away felis luctizzle pede. Yo daahng dawg crunk. Class aptent break it down check it out dang litora torquent per conubia mofo, per inceptos hymenizzle. Aliquam interdizzle, get down get down nizzle i'm in the shizzle nonummy, crazy gizzle viverra leo, in semper risus arcu izzle sizzle.</p>
+
+			<p>Vivamizzle we gonna chung mauris eget nisi consectetizzle check it out. Vivamus fo shizzle amizzle dope. Nizzle eu nisl sure lacizzle its fo rizzle feugizzle. Shizzle my nizzle crocodizzle bizzle viverra sizzle. For sure izzle arcu. Vestibulizzle enizzle enim, own yo' sizzle, sheezy eu, da bomb nizzle, libero. Nullizzle vitae i'm in the shizzle break yo neck, yall eros posuere pharetra. Mammasay mammasa mamma oo sa pede own yo', congue sure, that's the shizzle sizzle, rizzle nizzle amizzle, away. Dang at brizzle. Aliquam its fo rizzle , elementizzle fizzle, sollicitudizzle in, consequizzle ass, turpizzle. Ass da bomb crackalackin eu dawg rutrizzle vehicula. Curabitizzle gizzle sagittis da bomb. Crackalackin tellivizzle morbi boom shackalack senectus shizznit bling bling things malesuada shit izzle ma nizzle egestizzle. Izzle est. Curabitizzle elementizzle. Sheezy erizzle felis, sempizzle quis, bling bling ac, porta black, dope. Nulla sagittizzle mammasay mammasa mamma oo sa velit.</p>
+		]]></content>
+	</post>
+
+	<post>
+		<title>Hipster ipsum</title>
+		<author>http://hipsteripsum.me/</author>
+		<date>2013-08-16</date>
+		<content><![CDATA[
+			<p>Keytar raw denim gluten-free selvage Echo Park, single-origin coffee whatever. Deep v squid messenger bag Helvetica swag raw denim chillwave bitters cred, retro kitsch freegan polaroid cray bespoke. Fixie sartorial ennui, Intelligentsia viral PBR biodiesel wolf selvage Blue Bottle Banksy. Bicycle rights post-ironic Terry Richardson ennui, Odd Future Thundercats sriracha Intelligentsia letterpress shabby chic forage Austin typewriter. Pork belly Schlitz 8-bit bitters, disrupt aesthetic kale chips cornhole keytar pop-up Etsy quinoa. Pinterest banjo PBR selfies fixie wolf. Banh mi banjo salvia small batch.<p>
+
+			<p>Cliche High Life bespoke, church-key retro banjo deep v Brooklyn tofu before they sold out Blue Bottle American Apparel Pinterest forage. Pop-up dreamcatcher chillwave twee freegan. Pop-up butcher next level leggings, kogi plaid narwhal chambray Portland. 90's food truck Cosby sweater artisan, literally pop-up readymade fashion axe. Drinking vinegar actually biodiesel viral forage YOLO, vegan chillwave you probably haven't heard of them church-key Helvetica. Sriracha authentic Pitchfork Cosby sweater, Intelligentsia readymade ugh post-ironic Terry Richardson Bushwick. Pitchfork you probably haven't heard of them tofu, cardigan post-ironic photo booth Intelligentsia.</p>
+
+			<p>Typewriter swag gluten-free, YOLO kitsch raw denim Tonx cliche chillwave cornhole small batch. Kogi irony tofu artisan. Blog lomo forage, banjo organic salvia flexitarian pug disrupt chambray aesthetic. Aesthetic narwhal mustache, sustainable art party roof party drinking vinegar Truffaut umami Terry Richardson forage Carles vinyl slow-carb kale chips. Chillwave Pitchfork put a bird on it freegan keffiyeh retro. Next level cornhole artisan, Brooklyn seitan yr letterpress typewriter. VHS fashion axe pop-up, Terry Richardson Shoreditch twee cliche kogi fingerstache tousled High Life next level Schlitz.</p>
+		]]></content>
+	</post>
+
+	<post>
+		<title>Corporate ipsum</title>
+		<author>http://www.cipsum.com/</author>
+		<date>2013-08-24</date>
+		<content><![CDATA[
+			<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+
+			<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+
+			<p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+		]]></content>
+	</post>
+
+	<post>
+		<title>Hodor ipsum</title>
+		<author>http://hodoripsum.com/</author>
+		<date>2013-08-25</date>
+		<content><![CDATA[
+			<p>Hodor, hodor; hodor hodor hodor hodor - hodor. Hodor. Hodor, hodor, hodor. Hodor hodor hodor! Hodor hodor... Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor! Hodor hodor HODOR! Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor hodor hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor; hodor hodor hodor... Hodor hodor hodor. Hodor. </p>
+
+			<p>Hodor, hodor... Hodor hodor hodor. Hodor. Hodor, hodor. Hodor. Hodor, hodor... Hodor hodor hodor hodor - hodor hodor? Hodor! Hodor hodor, hodor; hodor hodor; hodor hodor hodor?! Hodor hodor HODOR! Hodor hodor hodor hodor hodor hodor hodor! Hodor! Hodor hodor, HODOR hodor, hodor hodor hodor... Hodor hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor hodor hodor. Hodor. Hodor hodor - hodor - hodor. Hodor. Hodor, HODOR hodor, hodor hodor, hodor. Hodor hodor hodor! </p>
+
+			<p>Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor hodor... Hodor hodor hodor hodor! Hodor hodor; hodor hodor; hodor hodor? Hodor. Hodor hodor - hodor... Hodor hodor hodor? Hodor, hodor HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor. Hodor hodor hodor hodor hodor... Hodor hodor hodor - hodor, hodor, hodor hodor. Hodor hodor HODOR! Hodor hodor; hodor hodor. Hodor, hodor, hodor. Hodor hodor hodor?! </p>
+		]]></content>
+	</post>
+
+</blog>
