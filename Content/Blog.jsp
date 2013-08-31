@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-	<title>My website</title>
+	<title>JSP Example</title>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" media="screen"/>
 	<link rel="stylesheet" href="styles/normalize.css" media="screen"/>
 	<link rel="stylesheet" href="styles/example.css" media="screen"/>
