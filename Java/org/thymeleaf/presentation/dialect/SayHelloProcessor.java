@@ -18,28 +18,52 @@ package org.thymeleaf.presentation.dialect;
 
 import org.thymeleaf.Arguments;
 import org.thymeleaf.dom.Element;
+import org.thymeleaf.dom.Text;
 import org.thymeleaf.processor.ProcessorResult;
 import org.thymeleaf.processor.attr.AbstractAttrProcessor;
 
 /**
- * Custom processor to show-off extending Thymeleaf.
+ * Custom processor to show-off extending Thymeleaf.  Just inserts a paragraph
+ * that says hello :P
  * 
  * @author Emanuel Rabina
  */
-public class MyProcessor extends AbstractAttrProcessor {
+public class SayHelloProcessor extends AbstractAttrProcessor {
 
-	public MyProcessor() {
+	public static final String PROCESSOR_NAME_SAY_HELLO = "say-hello";
 
-		super("");
+	public SayHelloProcessor() {
+
+		super(PROCESSOR_NAME_SAY_HELLO);
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public int getPrecedence() {
-		return 0;
+
+		return 2000;
 	}
 
+	/**
+	 * Simply inserts a child paragraph element into the current one, that says
+	 * hello to the value of this attribute.
+	 * 
+	 * @param args
+	 * @param el
+	 * @param attrname
+	 */
 	@Override
-	protected ProcessorResult processAttribute(Arguments args, Element el, String attrName) {
-		return null;
+	protected ProcessorResult processAttribute(Arguments args, Element el, String attrname) {
+
+		String attrvalue = el.getAttributeValue(attrname);
+
+		Element paragraph = new Element("p");
+		paragraph.addChild(new Text("Hello " + attrvalue));
+
+		el.insertChild(0, paragraph);
+
+		return ProcessorResult.OK;
 	}
 }

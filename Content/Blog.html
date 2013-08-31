@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org"
-	xmlns:joda="http://www.ultraq.net.nz/thymeleaf/presentation"
+	xmlns:presentation="http://www.thymeleaf.org/presentation"
 	lang="en">
 
 <head>
@@ -14,7 +14,7 @@
 
 <body id="blog">
 
-	<section id="post-id" class="post" th:each="post: ${blog.posts}" th:id="${post.id}">
+	<section class="post" th:each="post: ${posts}">
 		<header class="post-title">
 			<h1 th:text="${post.title}">Post Title</h1>
 		</header>
@@ -24,7 +24,7 @@
 				Post Date/Time
 			</time>
 		</div>
-		<div class="post-content" th:text="${post.content}">
+		<div class="post-content" th:utext="${post.content}">
 			<p>Tart candy jelly beans. Cupcake chupa chups I love sesame snaps.
 			I love oat cake ice cream cake sweet roll tiramisu brownie gummies.
 			Halvah I love jujubes. Bear claw sugar plum bear claw. Pudding

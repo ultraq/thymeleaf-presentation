@@ -15,8 +15,8 @@
 
 <body id="blog">
 
-	<c:forEach var="post" items="${blog.posts}">
-		<section id="${post.id}" class="post">
+	<c:forEach var="post" items="${posts}">
+		<section class="post">
 			<header class="post-title">
 				<h1>${post.title}</h1>
 			</header>

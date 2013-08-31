@@ -39,9 +39,11 @@ dependencies {
 	compile(
 		'javax.inject:javax.inject:1',
 		'joda-time:joda-time:2.3',
+		'joda-time:joda-time-jsptags:1.1.1',
 		'nz.net.ultraq.jaxb:jaxb-utilities:1.2.5',
 		'org.springframework:spring-context:3.2.4.RELEASE',
 		'org.springframework:spring-web:3.2.4.RELEASE',
+		'org.springframework:spring-webmvc:3.2.4.RELEASE',
 		'org.thymeleaf:thymeleaf-spring3:2.1.0-m2'
 	)
 }

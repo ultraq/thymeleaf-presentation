@@ -42,10 +42,23 @@ public class BlogController {
 	 * @param model
 	 * @return JSP view name.
 	 */
-	@RequestMapping(value = "/jsp-example/")
+	@RequestMapping(value = "/jsp-example")
 	public String blogPostsJSP(Model model) {
 
-		model.addAttribute("blog.posts", blogservice.fetchAllPosts());
+		model.addAttribute("posts", blogservice.fetchAllPosts());
 		return "Blog.jsp";
+	}
+
+	/**
+	 * Places all of the blog posts on the model, returns the Thymeleaf view.
+	 * 
+	 * @param model
+	 * @return Thymeleaf view name.
+	 */
+	@RequestMapping(value = "/thymeleaf-example")
+	public String blogPostsThymeleaf(Model model) {
+
+		model.addAttribute("posts", blogservice.fetchAllPosts());
+		return "Blog.html";
 	}
 }

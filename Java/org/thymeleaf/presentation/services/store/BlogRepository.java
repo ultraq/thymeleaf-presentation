@@ -43,9 +43,9 @@ public class BlogRepository {
 	public void initializeData() {
 
 		XMLReader<Blog> blogreader = new XMLReader<>(Blog.class);
-		blogreader.addValidatingSchema(BlogRepository.class.getResourceAsStream(
+		blogreader.addValidatingSchema(getClass().getClassLoader().getResourceAsStream(
 				"org/thymeleaf/presentation/entities/Blog.xsd"));
-		blog = blogreader.readXMLData(BlogRepository.class.getResourceAsStream(
+		blog = blogreader.readXMLData(getClass().getClassLoader().getResourceAsStream(
 				"org/thymeleaf/presentation/services/store/Blog.xml"));
 	}
 

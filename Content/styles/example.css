@@ -13,8 +13,9 @@ body {
 .post {
 	background-color: white;
 	border-right: 0.5em solid #99cc33;
+	margin-bottom: 5em;
 	margin-left: -20em;
-	padding: 1em 1em 4em 21em;
+	padding: 1em 2em 4em 21em;
 }
 
 .post-title {

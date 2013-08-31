@@ -2,5 +2,6 @@
 /.settings
 /build
 /Content/WEB-INF/classes
+/Java/rebel.xml
 .classpath
 .project
