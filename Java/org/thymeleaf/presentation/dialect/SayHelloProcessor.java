@@ -64,6 +64,7 @@ public class SayHelloProcessor extends AbstractAttrProcessor {
 
 		el.insertChild(0, paragraph);
 
+		el.removeAttribute(attrname);
 		return ProcessorResult.OK;
 	}
 }
