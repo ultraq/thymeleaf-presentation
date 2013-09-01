@@ -23,7 +23,7 @@
 			<header>
 				<h1>${post.title}</h1>
 			</header>
-			<div class=info">
+			<div class="info">
 				<time datetime="<joda:format value="${post.date}" pattern="yyyy-MM-dd HH:mm:ssZ"/>">
 					<joda:format value="${post.date}" pattern="EEEE, d MMMM yyyy"/>
 				</time>
