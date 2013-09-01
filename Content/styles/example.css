@@ -5,6 +5,20 @@ body {
 	font-family: 'Open Sans', sans-serif; 
 }
 
+.page-header {
+	font-size: 1.5em;
+	margin: 3em 0 5em;
+}
+
+.page-footer {
+	font-size: 0.8em;
+	text-align: right;
+}
+
+
+/* Blog page */
+/* --------- */
+
 #blog {
 	margin: 2em auto;
 	max-width: 50em;

@@ -68,5 +68,15 @@ public class PresentationDialect extends AbstractDialect implements IExpressionE
 		processors.add(new SayHelloProcessor());
 		return processors;
 	}
-}
 
+	/**
+	 * This dialect is not lenient.
+	 * 
+	 * @return <tt>false</tt>
+	 */
+	@Override
+	public boolean isLenient() {
+
+		return false;
+	}
+}

@@ -2,7 +2,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	xmlns:presentation="http://www.thymeleaf.org/presentation"
+	layout:decorator="Layout.html"
 	lang="en">
 
 <head>
@@ -13,6 +15,8 @@
 </head>
 
 <body id="blog">
+
+	<div layout:fragment="page-content">
 
 	<section class="post" th:each="post: ${posts}">
 		<header class="post-title">
@@ -36,6 +40,8 @@
 			by Post Author
 		</footer>
 	</section>
+
+	</div>
 
 </body>
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.thymeleaf.presentation;
+package org.thymeleaf.presentation.controllers;
 
 import javax.inject.Inject;
 

@@ -57,6 +57,7 @@
 		<property name="templateResolver" ref="templateResolver"/>
 		<property name="additionalDialects">
 			<set>
+				<bean class="nz.net.ultraq.thymeleaf.LayoutDialect"/>
 				<bean class="org.thymeleaf.presentation.dialect.PresentationDialect"/>
 			</set>
 		</property>
@@ -65,6 +66,11 @@
 	<bean id="thymeleafViewResolver" class="org.thymeleaf.spring3.view.ThymeleafViewResolver">
 		<property name="templateEngine" ref="templateEngine"/>
 		<property name="order" value="1"/>
+		<property name="excludedViewNames">
+			<array>
+				<value>Blog.jsp</value>
+			</array>
+		</property>
 	</bean>
 
 </beans>
