@@ -19,7 +19,7 @@
 <blog xmlns="http://www.thymeleaf.org/presentation/entities/blog"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.thymeleaf.org/presentation/entities/blog
-						https://raw.github.com/ultraq/thymeleaf-presentation/master/org/thymeleaf/presentation/entities/Blog.xsd">
+						https://raw.github.com/ultraq/thymeleaf-presentation/master/Schema/org/thymeleaf/presentation/entities/Blog.xsd">
 
 	<post>
 		<title>Classic lorem ipsum</title>

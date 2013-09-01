@@ -23,11 +23,13 @@
 apply plugin: 'java'
 apply from: 'https://raw.github.com/ultraq/gradle-support/master/java-support.gradle'
 apply from: 'https://raw.github.com/ultraq/gradle-support/master/jaxb.gradle'
+apply plugin: 'war'
 
 //project.name      = 'Thymeleaf Presentation'
 project.description = 'Demo project for the Thymeleaf presentation'
 project.archivesBaseName = 'thymeleaf-presentation'
 project.sourceCompatibility = '1.7'
+project.webAppDirName = 'Content'
 
 repositories {
 	maven {
