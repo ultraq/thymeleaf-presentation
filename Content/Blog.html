@@ -9,9 +9,12 @@
 
 <head>
 	<title>Thymeleaf Example</title>
+	<meta charset="UTF-8"/>
+	<link rel="icon" href="images/thymeleaf-logo.png"/>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" media="screen"/>
 	<link rel="stylesheet" href="styles/normalize.css" media="screen"/>
-	<link rel="stylesheet" href="styles/example.css" media="screen"/>
+	<link rel="stylesheet/less" type="text/css" href="styles/example.less" media="screen"/>
+	<script src="scripts/less-1.4.1.min.js"></script>
 </head>
 
 <body id="blog">
@@ -19,16 +22,16 @@
 	<div layout:fragment="page-content">
 
 	<section class="post" th:each="post: ${posts}">
-		<header class="post-title">
+		<header>
 			<h1 th:text="${post.title}">Post Title</h1>
 		</header>
-		<div class="post-info">
+		<div class="info">
 			<time th:datetime="${#joda.format(post.date, 'yyyy-MM-dd HH:mm:ssZ')}"
 				th:text="${#joda.format(post.date, 'EEEE, d MMMM yyyy')}">
 				Post Date/Time
 			</time>
 		</div>
-		<div class="post-content" th:utext="${post.content}">
+		<div class="content" th:utext="${post.content}">
 			<p>Tart candy jelly beans. Cupcake chupa chups I love sesame snaps.
 			I love oat cake ice cream cake sweet roll tiramisu brownie gummies.
 			Halvah I love jujubes. Bear claw sugar plum bear claw. Pudding
@@ -36,7 +39,7 @@
 			croissant cotton candy jelly. Soufflé jelly-o cake gingerbread
 			chocolate chupa chups gummi bears halvah.</p>
 		</div>
-		<footer class="post-footer" th:text="${post.author}">
+		<footer th:text="${post.author}">
 			by Post Author
 		</footer>
 	</section>

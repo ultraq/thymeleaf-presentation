@@ -5,14 +5,21 @@ body {
 	font-family: 'Open Sans', sans-serif; 
 }
 
-.page-header {
+header {
 	font-size: 1.5em;
-	margin: 3em 0 5em;
 }
 
-.page-footer {
-	font-size: 0.8em;
+footer {
 	text-align: right;
+}
+
+body {
+	> header {
+		margin: 3em 0 5em;
+	}
+	> footer {
+		padding-right: 2.5em;
+	}
 }
 
 
@@ -30,23 +37,19 @@ body {
 	margin-bottom: 5em;
 	margin-left: -20em;
 	padding: 1em 2em 4em 21em;
-}
 
-.post-title {
-	font-style: italic;
-}
-
-.post-info {
-	color: grey;
-	margin-bottom: 2em;
-}
-
-.post-content {
-	margin-bottom: 2em;
-	text-align: justify;
-}
-
-.post-footer {
-	color: grey;
-	text-align: right;
+	header {
+		font-style: italic;
+	}
+	.info {
+		color: grey;
+		margin-bottom: 2em;
+	}
+	.content {
+		margin-bottom: 2em;
+		text-align: justify;
+	}
+	footer {
+		color: grey;
+	}
 }
