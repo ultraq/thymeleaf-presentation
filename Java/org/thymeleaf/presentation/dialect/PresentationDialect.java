@@ -19,12 +19,9 @@ package org.thymeleaf.presentation.dialect;
 import org.thymeleaf.context.IProcessingContext;
 import org.thymeleaf.dialect.AbstractDialect;
 import org.thymeleaf.dialect.IExpressionEnhancingDialect;
-import org.thymeleaf.processor.IProcessor;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Custom dialect to show-off extending Thymeleaf.
@@ -36,7 +33,7 @@ public class PresentationDialect extends AbstractDialect implements IExpressionE
 	public static final String PRESENTATION_NAMESPACE = "http://www.thymeleaf.org/presentation";
 	public static final String PRESENTATION_PREFIX = "presentation";
 
-	public static final String JODA_PREFIX = "joda";
+	public static final String JODA_UTILITY = "joda";
 
 	/**
 	 * {@inheritDoc}
@@ -45,7 +42,7 @@ public class PresentationDialect extends AbstractDialect implements IExpressionE
 	public Map<String,Object> getAdditionalExpressionObjects(IProcessingContext processingContext) {
 
 		HashMap<String,Object> expressionobjects = new HashMap<>();
-		expressionobjects.put(JODA_PREFIX, new JodaUtility());
+		expressionobjects.put(JODA_UTILITY, new JodaUtility());
 		return expressionobjects;
 	}
 
@@ -56,17 +53,6 @@ public class PresentationDialect extends AbstractDialect implements IExpressionE
 	public String getPrefix() {
 
 		return PRESENTATION_PREFIX;
-	}
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public Set<IProcessor> getProcessors() {
-
-		HashSet<IProcessor> processors = new HashSet<>();
-		processors.add(new SayHelloProcessor());
-		return processors;
 	}
 
 	/**
